@@ -96,7 +96,8 @@
         .btn-primario:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(224, 36, 94, 0.5); }
         .btn-outline { background: transparent; color: var(--texto-blanco); border: 2px solid rgba(255,255,255,0.15); }
         .btn-outline:hover { background: rgba(255,255,255,0.05); transform: translateY(-2px); }
-        .btn-secundario { background: linear-gradient(135deg, var(--secundario) 0%, #006699 100%); color: var(--texto-blanco); }
+        .btn-secundario { background: linear-gradient(135deg, var(--secundario) 0%, #006699 100%); color: var(--texto-blanco); box-shadow: 0 4px 15px rgba(0, 136, 204, 0.3); }
+        .btn-secundario:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 136, 204, 0.5); }
 
         /* HEADER */
         header { background-color: rgba(13, 13, 18, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.03); position: sticky; top: 0; z-index: 100; padding: 14px 0; }
@@ -300,10 +301,15 @@
                     </form>
                 </div>
 
-                <!-- BOTONES REDES SOCIALES -->
+                <!-- BOTONES REDES SOCIALES (NUEVO CANAL DE TELEGRAM AÑADIDO) -->
                 <div class="hero-botones">
                     <a href="https://t.me/Juanbell947" target="_blank" class="btn btn-primario">
                         <i class="fab fa-telegram-plane"></i> Blog Personal Telegram
+                    </a>
+
+                    <!-- NUEVO CANAL DE TELEGRAM -->
+                    <a href="https://t.me/AQUI_TU_ENLACE" target="_blank" class="btn btn-secundario">
+                        <i class="fab fa-telegram-plane"></i> Mi Nuevo Canal Telegram
                     </a>
                     
                     <a href="https://onlyfans.com/juanbello947" target="_blank" class="btn btn-primario" style="background: linear-gradient(135deg, #00aff0 0%, #0088cc 100%);">
@@ -362,7 +368,7 @@
 
             <!-- CONTENEDOR PRINCIPAL DE CANALES -->
             <div class="lista-canales" id="listaCanales">
-                <!-- Se generará automáticamente mediante JavaScript -->
+                <!-- Se genera dinámicamente mediante JavaScript -->
             </div>
 
             <!-- RESPALDOS RÁPIDOS -->
@@ -432,7 +438,7 @@
 
     <!-- SCRIPTS INTERACTIVOS & CARGA DINÁMICA DE CANALES -->
     <script>
-        // LISTA DE CANALES INICIALES Y DISPONIBLES (MÁS DE 100 ESPACIOS)
+        // LISTA DE CANALES INICIALES
         const listaCanalesDatos = [
             { nombre: "Juan Bello 🇩🇴💎 Blog Personal", url: "https://t.me/Juanbell947", tag: "CANAL OFICIAL", btnText: "Unirse", icon: "fab fa-telegram-plane" },
             { nombre: "OnlyFans", url: "https://onlyfans.com/juanbello947", tag: "ONLYFANS", btnText: "Acceder", icon: "fas fa-lock", tagStyle: "background: rgba(0,175,240,0.2); color: #00aff0;" },
